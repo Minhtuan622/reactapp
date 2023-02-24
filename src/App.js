@@ -1,24 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import MainGame from "./component/tictactoe/MainGame";
+import Reducer from "./component/Reducer/Reducer";
+import Game from "./component/tictactoe2/Game";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="bg-slate-800 h-[100vh] flex items-center justify-center">
+          <Game/>
+      </div>
   );
 }
 
